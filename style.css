@@ -1,0 +1,351 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat-y;
+    overflow-y: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.main2 {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main3 {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.arrowleft {
+    height: 100px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+}
+
+.arrowRight {
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+}
+
+.arrowRight:active {
+    height: 90px;
+}
+
+.arrowleft:active {
+    height: 90px;
+}
+
+
+/* css Animate */
+
+
+/* @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.arrowRight {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+} */
+
+
+/* ** */
+
+.birdBox1 {
+    width: 100px;
+    height: 100px;
+    background-image: url("resources/birdFly.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* background-color: rgb(21, 255, 0); */
+    margin-left: -200px;
+}
+
+.birdBox2 {
+    width: 100px;
+    height: 100px;
+    background-image: url("resources/birdFly.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* background-color: rgb(255, 0, 174); */
+    /* margin-left: 100px; */
+}
+
+.birdBox3 {
+    width: 100px;
+    height: 100px;
+    background-image: url("resources/birdFly.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* background-color: rgb(0, 72, 255); */
+    margin-left: 200px;
+}
+
+.rocket {
+    height: 250px;
+    position: absolute;
+    z-index: 3;
+    /* margin-top: 400px; */
+    /* background-color: aliceblue; */
+    /* margin-left: 40px; */
+}
+
+.on {
+    width: 100%;
+    height: 82vh;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.under {
+    width: 100%;
+    height: 18vh;
+    /* background-color: rgb(3, 255, 57); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bomb {
+    height: 250px;
+    position: absolute;
+    margin-top: 350px;
+}
+
+.footer {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3px;
+}
+
+.footer p {
+    color: black;
+    font-size: 12px;
+}
+
+.footer .p2 {
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* sm device */
+
+@media only screen and (max-width: 992px) {
+    .main {
+        background-image: url("resources/backgroundMobileLight.png");
+        background-size: contain;
+    }
+
+    .main2 {
+        background-image: url("IntroPic.png");
+    }
+
+    .main3 {
+        background-image: url("smOver.png");
+    }
+
+    .rocket {
+        margin-top: 350px;
+        /* background-color: aliceblue; */
+        /* margin-left: 40px; */
+    }
+
+    .arrowleft {
+        margin-right: 200px;
+    }
+
+    .arrowRight {
+        margin-left: 200px;
+    }
+
+    .rocketIntro {
+        height: 280px;
+        margin-top: -100px;
+        position: absolute;
+    }
+
+    .startButton {
+        height: 60px;
+        margin-top: -500px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .startButton:active {
+        height: 50px;
+    }
+
+    .scoreBoard {
+        height: 170px;
+        width: 170px;
+        /* background-color: blue; */
+        background-image: url("markBoard2.png");
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 200px;
+        margin-top: -40px;
+        position: absolute;
+        z-index: 6;
+    }
+
+    .score {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 3px;
+        position: absolute;
+        z-index: 6;
+    }
+
+    .scoreText {
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 180px;
+        margin-top: 150px;
+    }
+
+    .restart {
+        height: 80px;
+        margin-left: 160px;
+        margin-top: 400px;
+        /* width: 250px; */
+        position: absolute;
+    }
+
+    .restart:active {
+        height: 75px;
+    }
+}
+
+
+/* lg device */
+
+@media only screen and (min-width: 992px) {
+    .main {
+        background: url("resources/background1.png");
+        background-size: cover;
+    }
+
+    .main2 {
+        background-image: url("IntroPc.png");
+    }
+
+    .main3 {
+        background-image: url("lgOver.png");
+    }
+
+    .rocket {
+        margin-top: 350px;
+        /* background-color: aliceblue; */
+        /* margin-left: 40px; */
+    }
+
+    .arrowleft {
+        margin-right: 300px;
+    }
+
+    .arrowRight {
+        margin-left: 300px;
+    }
+
+    .rocketIntro {
+        height: 500px;
+        margin-left: -850px;
+        margin-top: 200px;
+    }
+
+    .startButton {
+        height: 80px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .startButton:active {
+        height: 70px;
+    }
+
+    .scoreBoard {
+        height: 250px;
+        margin-left: 700px;
+        margin-top: -50px;
+        width: 250px;
+        /* background-color: aquamarine; */
+        background-image: url("markBoard2.png");
+        background-size: contain;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
+    .score {
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .restart {
+        height: 100px;
+        margin-left: 200px;
+        margin-top: 320px;
+        /* width: 250px; */
+        position: absolute;
+    }
+
+    .scoreText {
+        font-size: 80px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 210px;
+        margin-top: 60px;
+    }
+
+    .restart:active {
+        height: 90px;
+    }
+}
